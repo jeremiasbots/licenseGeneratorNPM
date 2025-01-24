@@ -1,0 +1,1 @@
+esbuild --minify --target=node22 index.js > build.js

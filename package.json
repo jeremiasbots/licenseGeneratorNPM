@@ -1,0 +1,33 @@
+{
+  "name": "@devep/li",
+  "version": "1.0.1",
+  "description": "License Generator",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremiasbots/license_generator.git"
+  },
+  "bin": {
+    "li": "./build.js"
+  },
+  "author": "devep",
+  "keywords": [
+    "license",
+    "generator",
+    "license generator",
+    "MIT",
+    "Apache 2.0",
+    "ISC",
+    "GPL v3",
+    "BSD 3-Clause",
+    "BSD 2-Clause",
+    "BSD 4-Clause"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremiasbots/license_generator/issues"
+  },
+  "homepage": "https://github.com/jeremiasbots/license_generator#readme"
+}
