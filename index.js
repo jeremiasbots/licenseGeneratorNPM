@@ -8,7 +8,7 @@ switch (os.platform()) {
         switch (os.arch()) {
             case "x64":
                 const route = path.join(__dirname, "bin", "windows_x86_64.exe")
-                exec(`${route} ${process.argv[1]} ${process.argv[2]} ${process.argv[3] ?? ''}`, (error, stdout, stderr) => {
+                exec(`${route} ${process.argv[2]} ${process.argv[3]} ${process.argv[4] ?? ''}`, (error, stdout, stderr) => {
                     if (error || stderr) {
                         console.error(error)
                         return
@@ -18,7 +18,7 @@ switch (os.platform()) {
                 break
             case "arm64":
                 const routeARM = path.join(__dirname, "bin", "windows_arm64.exe")
-                exec(`${routeARM} ${process.argv[1]} ${process.argv[2]} ${process.argv[3] ?? ''}`, (error, stdout, stderr) => {
+                exec(`${routeARM} ${process.argv[2]} ${process.argv[3]} ${process.argv[4] ?? ''}`, (error, stdout, stderr) => {
                     if (error || stderr) {
                         console.error(error)
                         return
@@ -35,7 +35,7 @@ switch (os.platform()) {
         switch (os.arch()) {
             case "x64":
                 const route = path.join(__dirname, "bin", "macos_x86_64")
-                exec(`${route} ${process.argv[1]} ${process.argv[2]} ${process.argv[3] ?? ''}`, (error, stdout, stderr) => {
+                exec(`${route} ${process.argv[2]} ${process.argv[3]} ${process.argv[4] ?? ''}`, (error, stdout, stderr) => {
                     if (error || stderr) {
                         console.error(error)
                         return
@@ -45,7 +45,7 @@ switch (os.platform()) {
                 break
             case "arm64":
                 const routeARM = path.join(__dirname, "bin", "macos_arm64")
-                exec(`${routeARM} ${process.argv[1]} ${process.argv[2]} ${process.argv[3] ?? ''}`, (error, stdout, stderr) => {
+                exec(`${routeARM} ${process.argv[2]} ${process.argv[3]} ${process.argv[4] ?? ''}`, (error, stdout, stderr) => {
                     if (error || stderr) {
                         console.error(error)
                         return
@@ -62,7 +62,7 @@ switch (os.platform()) {
         switch (os.arch()) {
             case "x64":
                 const route = path.join(__dirname, "bin", "linux_x86_64")
-                exec(`${route} ${process.argv[1]} ${process.argv[2]} ${process.argv[3] ?? ''}`, (error, stdout, stderr) => {
+                exec(`${route} ${process.argv[2]} ${process.argv[3]} ${process.argv[4] ?? ''}`, (error, stdout, stderr) => {
                     if (error || stderr) {
                         console.error(error)
                         return
@@ -72,7 +72,7 @@ switch (os.platform()) {
                 break
             case "arm64":
                 const routeARM = path.join(__dirname, "bin", "linux_arm64")
-                exec(`${routeARM} ${process.argv[1]} ${process.argv[2]} ${process.argv[3] ?? ''}`, (error, stdout, stderr) => {
+                exec(`${routeARM} ${process.argv[2]} ${process.argv[3]} ${process.argv[4] ?? ''}`, (error, stdout, stderr) => {
                     if (error || stderr) {
                         console.error(error)
                         return

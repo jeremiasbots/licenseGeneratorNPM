@@ -1,6 +1,6 @@
 {
   "name": "@devep/li",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "License Generator",
   "publishConfig": {
     "access": "public"
